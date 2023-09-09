@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    /* background: #fefae0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    color: #f58549;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.TodoWrapper{
+    background: #ffffff;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 2px solid #d4a373;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TodoForm{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.todo-input{
+    outline: none;
+    background: none;
+    border: 1px solid #d4a373;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    color: #ec6659;
+}
+
+.todo-input::placeholder{
+    color: #a1570d;
+}
+
+.todo-btn{
+    background: #d4a373;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+}
+
+.Todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d4a373;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.fa-trash{
+    margin-left: 0.75rem;
+}
+
+.completed{
+    color: #c5aeff;
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 430px) {
+    body{
+        background: #ffffff;
+    }
+    .App{
+        height: 100%;
+    }
+    .TodoWrapper{
+        margin-top: 0;
+        border: none;
+    }
+    h1{
+        margin-bottom: 1.2rem;
+    }
+    .TodoForm{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.3rem;
+    }
+    .todo-input{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        font-weight: bolder;
+    }
+    .todo-btn{
+        font-weight: 900;
+        width: 40%;
+    }
 }
