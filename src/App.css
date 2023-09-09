@@ -49,7 +49,7 @@ h1{
 }
 
 .todo-input::placeholder{
-    color: #a1570d;
+    color: #d18437;
 }
 
 .todo-btn{
@@ -110,5 +110,8 @@ h1{
     .todo-btn{
         font-weight: 900;
         width: 40%;
+    }
+    .todo-input::placeholder {
+        color: #d4a373;
     }
 }
